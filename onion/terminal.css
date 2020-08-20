@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+  font-family: "Source Code Pro";
+  color:#4bec13;
+}
+
+.input {
+  border-top: 1px dashed #4bec13;
+  display: flex;
+  justify-content: space-around;
+}
+
+.carrot {
+  text-align: center;
+  font-size: 20px;
+}
+
+#user-input {
+  width: 100%;
+  padding: 2px;
+  font-size: 20px;
+  background-color: black;
+  border: none;
+  font-family: "Source Code Pro";
+  color:#4bec13;
+}
+
+#user-input:focus {
+  outline-width: 0;
+}
+
+.login {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  border: 1px dashed #4bec13;
+}

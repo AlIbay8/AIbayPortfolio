@@ -1,0 +1,99 @@
+body {
+    overflow: auto;
+    margin: 0px;
+}
+
+.header {
+    text-align: center;
+    padding: 25px;
+    background: #BF55EC;
+}
+
+.container, .menu {
+    display: flex;
+}
+
+.menu {
+    padding: 5px;
+    border: 10px solid lightgray;
+    background: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+}
+
+footer {
+    padding: 40px;
+    background: darkgray;
+    text-align: center;
+}
+
+.underline {
+    text-decoration:none;
+}
+
+.underline:hover {
+  text-decoration: underline;
+}
+
+.homeBtn, .familyBtn, .lifeBtn, .favBtn, .hobbiesBtn, .achieveBtn {
+    font-size: 20px;
+    text-decoration:none;
+}
+
+.homeBtn, .familyBtn, .lifeBtn, .favBtn, .hobbiesBtn, .achieveBtn:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+iframe {
+    width: 560px;
+    height: 316px;
+}
+
+img {
+    max-width: 50%;
+    border: 2px solid black;
+}
+
+.crop {
+    max-height: 200px;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .menu, .header, .hide {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+  }
+
+  body {
+      overflow: auto;
+      margin: 0px;
+  }
+  .menu {
+    display: none;
+  }
+  .hide {
+    visibility: visible;
+  }
+
+  footer {
+    padding: 5px;
+    border: 10px;
+  }
+}

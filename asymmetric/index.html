@@ -1,0 +1,62 @@
+<html class="gr__cobweb_cs_uga_edu">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Asymmetric Keys</title>
+  </head>
+
+  <body onload="clear()" data-gr-c-s-loaded="true">
+    <center>
+    <h1>Crypto Demo</h1>
+    </center>
+    <font color="blue"><h3>Step 1: Generate Keys</h3></font>
+    <!--
+    <p>Press the button to generate a pair of randomly chosen keys.</p>
+    <ul>
+      <li>
+        <p>The <b>public key</b> will be posted in a  public key repository where anyone can find it. </p>
+        <p>The <b>private key</b> should be known only toyou.</p>
+      </li>
+    </ul>
+    -->
+
+    <form name="gen_form">
+      <input type="button" value="Generate keys" onclick="generate()">
+      Public key: &nbsp; 
+      <input type="text" size="5" name="public_key" class="public_key">
+      Private key: &nbsp; 
+      <input type="text" size="5" name="private_key" class="private_key">
+    </form>
+
+    <font color="blue"><h3>Step 2: Encrypt the message </h3></font>
+    <!--
+    <p>Now type in a short message and enter one of the keys from above. Then press the button.</p>
+    -->
+    <form name="myform">
+      Message: &nbsp;
+      <input type="text" size="35" value="" name="input" class="input">
+      Encryption key:
+      &nbsp; <input type="text" size="5" name="encrypt_key">
+      &nbsp; <input type="button" value="Encode message" onclick="encrypt()">
+      <p><font color="red"><b>The encrypted message:</b></font><input type="text" size="75" value="" name="crypted" class="crypted"></p>
+    </form>
+
+    <font color="blue"><h3>Step 3: Decrypt the message </h3></font>
+    <!--
+    <p>Pretend that you have received the encrypted message over the Internet. Now enter an appropriate decryption key and press the "Decode" button.</p>
+    <p><i>Hint:</i> If you used one of the two keys generated in step 1, the other key works here.</p>
+    -->
+    
+    <form name="decrypt_form">
+      Decryption key:
+      &nbsp; <input type="number" size="5" name="decrypt_key" class="decrypt_key">
+      &nbsp; <input type="button" value="Decode message" onclick="decrypt()"><p>
+      <font color="red"><b>The decrypted message:</b></font>
+      <input type="text" size="35" value="" name="decrypted" class="decrypted">
+      </p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

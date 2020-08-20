@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Demo</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  
+  <body>
+    <h1>Crypto Demo</h1>
+    <h3>Step 1: Generate Keys</h3>
+
+    <form class="generate">
+      <input type="button" value="Generate keys" onclick="generate()">
+      Public key: &nbsp; 
+      <input type="number" size="5" id="public_key">
+      Private key: &nbsp; 
+      <input type="number" size="5" id="private_key">
+    </form>
+
+    <h3>Step 2: Encrypt Your Message</h3>
+
+    <form class="plaintext">
+      Message: &nbsp;
+      <input type="text" size="35" value="" id="input">
+      Encryption key:
+      &nbsp; <input type="number" size="5" id="encrypt_key">
+      &nbsp; <input type="button" value="Encode message" onclick="encrypt()">
+      <p>The encrypted message:<input type="text" size="75" value="" id="crypted"></p>
+    </form>
+
+    <h3>Step 3: Decrypt Your Message</h3>
+
+    <form name="decrypt_form">
+      Length of original message:
+      &nbsp; <input type="number" size="5" id="length">
+      Decryption key:
+      &nbsp; <input type="number" size="5" id="decrypt_key">
+      &nbsp; <input type="button" value="Decode message" onclick="decrypt()">
+      <p>The decrypted message:<input type="text" size="35" value="" id="decrypted"></p>
+    </form>
+    <script src="crypto.js"></script>
+  </body>
+</html>
