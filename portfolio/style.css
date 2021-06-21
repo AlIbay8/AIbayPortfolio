@@ -34,7 +34,8 @@ p {
 }
 
 .headshot {
-  width: 10%;
+  max-width: 80px;
+  min-width: 50px;
   margin: 20px;
 }
 
@@ -43,8 +44,11 @@ p {
   color:black;
   align-items:center;
   font-size:50px;
+  margin: 0 auto;
   margin-top:5px;
   margin-bottom:5px;
+  max-width: 500px;
+  min-width: 50%;
 }
 
 .info {
@@ -75,8 +79,10 @@ p {
 
 .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid black;
 }
 
 .reverse {
@@ -85,7 +91,7 @@ p {
 
 .max {
   max-width: 100%;
-  border: 1px solid black;
+  
 }
 
 .white {
